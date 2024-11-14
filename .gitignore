@@ -360,3 +360,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+#Rider
+.idea
+
+#RBM
+ModuleData
+SubModule.xml
+GUI
+DefaultConfigDONOTEDIT.xml

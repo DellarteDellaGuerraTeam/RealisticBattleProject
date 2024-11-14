@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\RBM\bin\Win64_Shipping_Client\</OutputPath>
+    <OutputPath>..\..\DellarteDellaGuerraRBM\bin\Win64_Shipping_Client\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Modules\RBM\bin\Win64_Shipping_Client</OutputPath>
+    <OutputPath>..\..\Modules\DellarteDellaGuerraRBM\bin\Win64_Shipping_Client</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -47,15 +47,15 @@
     </Reference>
     <Reference Include="RBMCombat, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\RBM\bin\Win64_Shipping_Client\RBMCombat.dll</HintPath>
+      <HintPath>..\..\DellarteDellaGuerraRBM\bin\Win64_Shipping_Client\RBMCombat.dll</HintPath>
     </Reference>
     <Reference Include="RBMConfig, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\RBM\bin\Win64_Shipping_Client\RBMConfig.dll</HintPath>
+      <HintPath>..\..\DellarteDellaGuerraRBM\bin\Win64_Shipping_Client\RBMConfig.dll</HintPath>
     </Reference>
     <Reference Include="RBMTournament, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\RBM\bin\Win64_Shipping_Client\RBMTournament.dll</HintPath>
+      <HintPath>..\..\DellarteDellaGuerraRBM\bin\Win64_Shipping_Client\RBMTournament.dll</HintPath>
     </Reference>
     <Reference Include="SandBox">
       <HintPath>..\..\SandBox\bin\Win64_Shipping_Client\SandBox.dll</HintPath>
@@ -270,18 +270,18 @@
   </ItemGroup>
   <!-- Post-Build -->
   <PropertyGroup>
-    <PostBuildEvent>xcopy /d /y "$(SolutionDir)RBMXML\RBM_native_parameters_tweaks.xml" "$(SolutionDir)..\RBM\ModuleData\"
-xcopy /d /y "$(SolutionDir)RBMXML\RBM_spear_managed_core_parameters.xml" "$(SolutionDir)..\RBM\ModuleData\"
-xcopy /d /y "$(SolutionDir)RBMXML\RBM_spear_combat_parameters.xml" "$(SolutionDir)..\RBM\ModuleData\"
-xcopy /d /y "$(SolutionDir)RBMXML\RBM_bow_shields.xml" "$(SolutionDir)..\RBM\ModuleData\"
-xcopy /d /y "$(SolutionDir)RBMXML\project.mbproj" "$(SolutionDir)..\RBM\ModuleData\"
-xcopy /d /y "$(SolutionDir)RBMXML\GUI\Prefabs\" "$(SolutionDir)..\RBM\GUI\Prefabs\"
-xcopy /d /y "$(SolutionDir)RBMXML\GUI\Brushes\" "$(SolutionDir)..\RBM\GUI\Brushes\"
-xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\" "$(SolutionDir)..\RBM\ModuleData\Languages\"
-xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\FR\" "$(SolutionDir)..\RBM\ModuleData\Languages\FR\"
-xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\TR\" "$(SolutionDir)..\RBM\ModuleData\Languages\TR\"
-xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\CNs\" "$(SolutionDir)..\RBM\ModuleData\Languages\CNs\"
-xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\JP\" "$(SolutionDir)..\RBM\ModuleData\Languages\JP\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /d /y "$(SolutionDir)RBMXML\RBM_native_parameters_tweaks.xml" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\"
+xcopy /d /y "$(SolutionDir)RBMXML\RBM_spear_managed_core_parameters.xml" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\"
+xcopy /d /y "$(SolutionDir)RBMXML\RBM_spear_combat_parameters.xml" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\"
+xcopy /d /y "$(SolutionDir)RBMXML\RBM_bow_shields.xml" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\"
+xcopy /d /y "$(SolutionDir)RBMXML\project.mbproj" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\"
+xcopy /d /y "$(SolutionDir)RBMXML\GUI\Prefabs\" "$(SolutionDir)..\DellarteDellaGuerraRBM\GUI\Prefabs\"
+xcopy /d /y "$(SolutionDir)RBMXML\GUI\Brushes\" "$(SolutionDir)..\DellarteDellaGuerraRBM\GUI\Brushes\"
+xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\Languages\"
+xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\FR\" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\Languages\FR\"
+xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\TR\" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\Languages\TR\"
+xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\CNs\" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\Languages\CNs\"
+xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\JP\" "$(SolutionDir)..\DellarteDellaGuerraRBM\ModuleData\Languages\JP\"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
@@ -291,6 +291,6 @@ xcopy /d /y "$(SolutionDir)LanguagesXmls\Languages\JP\" "$(SolutionDir)..\RBM\Mo
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>xcopy /d /y "$(SolutionDir)RBMXML\DefaultConfigDONOTEDIT.xml" "$(SolutionDir)..\RBM\"</PreBuildEvent>
+    <PreBuildEvent>xcopy /d /y "$(SolutionDir)RBMXML\DefaultConfigDONOTEDIT.xml" "$(SolutionDir)..\DellarteDellaGuerraRBM\"</PreBuildEvent>
   </PropertyGroup>
 </Project>
